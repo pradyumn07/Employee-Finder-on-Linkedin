@@ -1,38 +1,59 @@
 # 🚀 Employee Finder
 
-A full-stack web application that allows users to search for employees of any company using just the company name. It leverages **SerpAPI** to find the official company website and **Hunter.io** to fetch publicly available employee information.
-
-![screenshot](./screenshot.png) <!-- You can change this to your actual screenshot file -->
+A React + Node.js web application to search for employees of any company using their official domain. Uses SerpAPI to get the official domain and Hunter.io to fetch public employee data.
 
 ---
 
-## 🔍 Features
+## 🛠️ Features
 
-- 🔎 Search for employees by company name
-- 📬 View employee details including:
-  - Name
-  - Position
-  - Email
-  - LinkedIn
-- 🌗 Dark mode toggle
-- 🔄 Pagination support
+* Search employees by company name
+* Fetches domain using SerpAPI
+* Pulls employee data (name, email, position, LinkedIn) from Hunter.io
+* Paginated table with dark/light theme toggle
 
 ---
 
-## 🛠 Tech Stack
+## 📦 Getting Started
 
-- **Frontend**: React, TailwindCSS, Framer Motion
-- **Backend**: Express.js, Axios
-- **APIs Used**:
-  - [SerpAPI](https://serpapi.com/) – for fetching company domain
-  - [Hunter.io](https://hunter.io/) – for retrieving employee details
-
----
-
-## 🚀 Getting Started
+Follow these steps to set up the project locally:
 
 ### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/employee-finder.git
 cd employee-finder
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
+SERPAPI_KEY=your_serpapi_key
+HUNTER_KEY=your_hunter_api_key
+```
+
+You can get your API keys from:
+
+* [🔗 SerpAPI](https://serpapi.com/manage-api-key)
+* [🔗 Hunter.io](https://hunter.io/api_keys)
+
+### 4. Start the Backend Server
+
+```bash
+node server.js
+```
+
+### 5. Start the Frontend (React)
+
+If using **Vite**:
+
+```bash
+npm run dev
+```
