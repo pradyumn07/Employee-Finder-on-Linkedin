@@ -1,0 +1,128 @@
+/* src/styles/EmployeeTable.css */
+.employee-table-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.employee-table-wrapper{
+        padding: 16px;
+    margin-left: 36px;
+    margin-right: -98px;
+    align-content: flex-end;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-theme-btn {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.toggle-theme-btn:hover {
+  background-color: #2563eb;
+}
+
+.page-indicator {
+  font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #d1d5db;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.employee-table {
+  width: 100%;
+  background-color: #1f2937;
+  border-collapse: collapse;
+}
+
+.table-header-row {
+  background-color: #374151;
+  color: #60a5fa;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #4b5563;
+}
+
+.name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background-color: #4b5563;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.linkedin-link {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+.no-employees-text {
+  text-align: center;
+  color: #9ca3af;
+  padding: 1.5rem;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  animation: pulse 1s infinite;
+  margin-top: 20px;
+}
+
+.pagination-controls {
+      display: flex
+;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 26px;
+}
+
+.pagination-btn {
+  padding: 0.5rem 1rem;
+  background-color: #374151;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pagination-btn:hover {
+  background-color: #4b5563;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

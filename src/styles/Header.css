@@ -1,0 +1,26 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #1e1e2f, #2a2a4a);
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.rocket {
+  font-size: 2rem;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+}
